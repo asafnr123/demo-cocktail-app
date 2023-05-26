@@ -1,3 +1,6 @@
+
+/* CocktailCard style   */
+
 .card-container {
     margin: 25px;
     max-width: 300px;
@@ -41,11 +44,15 @@
     padding: 10px;
 }
 
-.learn-more {
-    visibility: hidden;
+
+.card-container .nav-link {
     position: relative;
     left: 22%;
-    bottom: 55%;
+    bottom: 50%;
+}
+
+.learn-more {
+    visibility: hidden;
     width: 170px;
     background-color: #31c231;
     color: #000;
@@ -59,19 +66,30 @@
 
 
 .learn-more:hover {
-    background-color: #00ff15;
+    background-color: #2bdf13;
 }
 
 .card-container:hover {
     background-color: rgb(22, 22, 22);
-    opacity: 0.6;
-    box-shadow: 1px 1px 2px 1px;
+    opacity: 0.9;
 
     .learn-more {
         visibility: visible;
     }
 
+    .name,.desc-container {
+        color: white;
+    }
+
 }
+
+/* End CocktailCard style   */
+
+
+
+
+
+/* CocktailPage style */
 
 .cocktail-container {
     display: flex;
@@ -80,3 +98,6 @@
     justify-content: center;
     align-items: center;
 }
+
+
+/* End CocktailPage style */

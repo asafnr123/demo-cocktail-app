@@ -12,22 +12,24 @@ export function CocktailCard({ cocktail }) {
 
     return (
         <>
-        <Link className="nav-link" to={`/cocktails/${cocktail.name}`}>
+        
         <div className="card-container">
                 
                 <div className="img-container">
-                    <img src={cocktail.img} alt={cocktail.name} />
+                    <img src={cocktail.img} alt={cocktail.Name} />
                 </div>
 
-                <h3 >{cocktail.name}</h3>
+                <h3 className="name" >{cocktail.Name}</h3>
 
                 <div className="desc-container">
                     <p>{cocktail.description}</p>
                 </div>
 
+                <Link className="nav-link" to={`/cocktails/${cocktail.Name}`}>
                 <button className="learn-more">Learn More</button>
+                </Link>
             </div>
-        </Link>
+        
             
         </>
 
