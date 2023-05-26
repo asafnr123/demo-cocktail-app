@@ -1,0 +1,174 @@
+/* Home page style  */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 570px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://images.unsplash.com/photo-1574879948818-1cfda7aa5b1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+  background-size: 100% 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.intro h2 {
+  font-size: 100px;
+  color: #2ee29a;
+  font-family: 'Bauhaus 93', 'Lucida Sans';
+  cursor: default;
+}
+
+.intro p {
+  font-size: 35px;
+  color: lightgray;
+  font-family: 'Bauhaus 93', 'Lucida Sans';
+  cursor: default;
+}
+
+.intro button {
+  background-color: #00ff99;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+.intro button:hover {
+  opacity: 0.8;
+}
+
+.usages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 80px;
+  cursor: default;
+}
+
+.usages .usage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 100px;
+  cursor: default;
+}
+
+
+.usages .usage .usage-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+  cursor: default;
+}
+
+.usages .usage .usage-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+  cursor: default;
+}
+
+
+/* End home page style  */
+
+
+
+/* Footer style */
+
+
+
+.footer-container span {
+  color: #ffffff8c;
+  font-size: 29px;
+  position: absolute;
+  left: 25px;
+  cursor: default;
+}
+
+.footer-icon {
+  color: #ffffff8c;
+}
+
+.footer-icon:hover {
+  color: #31c288;
+}
+
+.text-center {
+  cursor: default;
+}
+
+
+
+/* End footer style */
+
+
+
+
+/* About page style */
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url("../images/b.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
+  
+}
+
+.firstsection {
+  height: 100vh;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 50%;
+  margin: auto;
+  height: 80%;
+  cursor: default;
+}
+
+.text-big {
+  font-family: 'Bauhaus 93', 'Lucida Sans';
+  font-weight: bold;
+  font-size: 77px;
+}
+
+.text-med {
+  font-family: 'Agency FB', 'Sansita Swashed';
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text-small {
+  color: white;
+  font-family: 'Agency FB', 'Sansita Swashed';
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+
+
+.firstHalf {
+  width: 79%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center
+}
+
+.center {
+  text-align: center;
+}
+
+
+/* End about page style */
