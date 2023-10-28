@@ -16,16 +16,16 @@ export function CocktailCard({ cocktail }) {
         <div className="card-container">
                 
                 <div className="img-container">
-                    <img src={cocktail.img} alt={cocktail.Name} />
+                    <img src={cocktail.img} alt={cocktail.name} />
                 </div>
 
-                <h3 className="name" >{cocktail.Name}</h3>
+                <h3 className="name" >{cocktail.name}</h3>
 
                 <div className="desc-container">
                     <p>{cocktail.description}</p>
                 </div>
 
-                <Link className="nav-link" to={`/cocktails/${cocktail.Name}`}>
+                <Link className="nav-link" to={`/cocktails/${cocktail.name}`}>
                 <button className="learn-more">Learn More</button>
                 </Link>
             </div>

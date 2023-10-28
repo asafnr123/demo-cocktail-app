@@ -6,6 +6,9 @@ import { FaCocktail } from 'react-icons/fa'
 
 export function MyNavBar({ menu }) {
 
+
+  let homeUrl = 'http://localhost:3000/home';
+
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -15,7 +18,9 @@ export function MyNavBar({ menu }) {
             <Link className='nav-link' style={{ marginLeft: 12 }} key={index} to={item.url}>{item.name}</Link>
           )}
         </Nav>
-        <Navbar.Brand style={{ cursor: 'default' }}> <FaCocktail color='#31c288' /> MyCocktail</Navbar.Brand>
+        <Link to={homeUrl} className='nav-link'>
+        <Navbar.Brand style={{ cursor: 'pointer' }}><FaCocktail color='#31c288' /> MyCocktail</Navbar.Brand>
+        </Link>
       </Navbar>
     </>
   );

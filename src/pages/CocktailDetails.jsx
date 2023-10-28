@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom'
-import { getData, getCocktail } from "../services/cocktailServices"
+import { getCocktail } from "../services/cocktailServices"
+import "../styles/cocktails.css"
 
 
 
@@ -70,15 +71,24 @@ export function CocktailDetails() {
 
     if (!name) return <div>lodaing...</div>
 
-    
+
 
 
     return (
 
-        <h2>{name}</h2>
+        <>
+            <h2>{name}</h2>
 
 
+            <div className='cocktail-detail-container'>
 
+                <div>
+                    
+                </div>
+            </div>
+
+
+        </>
     )
 
 

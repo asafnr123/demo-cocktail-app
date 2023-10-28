@@ -5,7 +5,7 @@ import { getData } from '../services/cocktailServices';
 
 export function Cocktails() {
 
-   // const cocktails = getData();
+   const cocktails = getData();
 
     const localCocktails = [
         {
@@ -64,11 +64,16 @@ export function Cocktails() {
     return (
         <div className='cocktail-container'>
             {
-                localCocktails.map((c, index) => {
-                    return (
-                        <CocktailCard key={index} className='cocktail-item' cocktail={c} />
-                    )
-                })
+                // localCocktails.map((c, index) => {
+                //     return (
+                //         <CocktailCard key={index} className='cocktail-item' cocktail={c} />
+                //     )
+                // })
+                cocktails.map((c, index) => {
+                  return (
+                      <CocktailCard key={index} className='cocktail-item' cocktail={c} />
+                  )
+              })
             }
 
         </div>

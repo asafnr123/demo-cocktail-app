@@ -101,3 +101,12 @@
 
 
 /* End CocktailPage style */
+
+
+
+/* CocktailDetails style */
+
+.cocktail-detail-container {
+    margin: 20px;
+    border: 1px solid black;
+}
